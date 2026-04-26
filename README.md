@@ -1,6 +1,9 @@
-# Hermes Arena Dashboard Plugin
+# Hermes Playground Dashboard Plugin
 
-Model Playground for comparing the same prompt across multiple configured models.
+Model Playground for quickly comparing the same prompt across multiple configured models.
+
+<img width="1965" height="1159" alt="image" src="https://github.com/user-attachments/assets/a43ddd5c-df26-4a15-aad0-9a9473ac0b9a" />
+
 
 ## Development
 
@@ -39,12 +42,3 @@ done
    - mixed success/failure runs show per-model errors without hiding successful outputs
    - Stop marks in-flight panes as aborted
    - metric values color only comparative latency, first-token time, and estimated cost
-
-## Notes
-
-- OpenRouter, NVIDIA, and OpenAI-compatible custom providers with a `/models` endpoint support live model discovery.
-- Ollama uses Ollama Cloud by default (`https://ollama.com`) with `OLLAMA_API_KEY`, `/api/tags` for discovery, and `/api/chat` for streaming.
-- Providers without a compatible model-list endpoint remain manual-entry only.
-- Custom providers use server-side env vars only: set `NAME_API_KEY` and `NAME_BASE_URL` in `.env`, then add the same provider name in the UI. The browser does not store or submit API keys.
-- Model selections and custom provider names are stored in browser `localStorage` with a route-scoped key. No secrets are stored there.
-- Arena intentionally does not persist run history or model sets. It is a playground.
