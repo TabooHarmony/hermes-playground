@@ -1,0 +1,13 @@
+{
+  "name": "arena",
+  "label": "Playground",
+  "description": "Model Playground -- test prompts against multiple models side-by-side",
+  "icon": "Zap",
+  "version": "1.0.0",
+  "tab": {
+    "path": "/arena",
+    "position": "after:skills"
+  },
+  "entry": "dist/index.js",
+  "api": "plugin_api.py"
+}

@@ -1,0 +1,1 @@
+{"scripts":{"build":"node scripts/build.js","test:frontend":"node tests/frontend_smoke.test.js"},"devDependencies":{}}
