@@ -1,12 +1,15 @@
 # Hermes Playground
 
-> Side-by-side LLM comparison, streaming in real-time. Pick your fighters, run the same prompt, and watch models compete on speed, cost, and quality.
+> Side-by-side LLM comparison, streaming in real-time. Pick your models, run the same prompt, and watch models compete on speed, cost, and quality.
 
 ## What is this?
 
 Playground is a dashboard plugin for [Hermes Agent](https://github.com/NousResearch/hermes-agent) that lets you pit multiple language models against each other in a single run. Same prompt, same system context, different models. Responses stream live. Metrics appear as they finish. You see who is fast, who is cheap, and who actually answers the question.
 
-No more switching tabs between ChatGPT, Claude, and your self-hosted setup. No more guessing which model is worth the API spend. One prompt, one click, instant comparison.
+No more switching tabs websites and your self-hosted setup. No more guessing which model is worth the API spend or is faster. One prompt, one click, instant comparison.
+
+<img width="1965" height="1159" alt="image" src="https://github.com/user-attachments/assets/866fcfcd-6408-4d46-bdee-725f71eba354" />
+
 
 ## Why use it?
 
@@ -18,12 +21,12 @@ No more switching tabs between ChatGPT, Claude, and your self-hosted setup. No m
 
 ## Features
 
-- **Live streaming.** All models stream simultaneously via Server-Sent Events. No polling, no refresh.
-- **Smart metrics.** TTFT (time-to-first-token), total latency, input/output tokens, and estimated cost -- compared and color-coded so best values pop.
+- **Streaming.** All models stream simultaneously via Server-Sent Events. No polling, no refresh.
+- **Smart metrics.** TTFT (time-to-first-token), total latency, input/output tokens, and estimated cost, compared and color-coded so best values pop.
 - **Model discovery.** Browse available models from OpenRouter, NVIDIA, Ollama Cloud, and OpenCode Go without leaving the UI. Custom OpenAI-compatible providers work too.
 - **Benchmark prompts.** Built-in prompt pool with logic puzzles, instruction-following challenges, and reasoning tests. Click Random Prompt to roll a new one.
 - **Markdown rendering.** Code blocks, lists, headers, and links render cleanly in each response pane.
-- **Export runs.** Download the full run as JSON -- prompt, system context, model list, responses, and metrics.
+- **Export runs.** Download the full run as JSON; prompt, system context, model list, responses, and metrics.
 - **Security first.** API keys stay server-side in your `.env`. The browser never sees them, never stores them.
 
 ## Install
