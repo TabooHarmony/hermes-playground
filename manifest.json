@@ -1,7 +1,7 @@
 {
   "name": "arena",
   "label": "Playground",
-  "description": "Model Playground -- test prompts against multiple models side-by-side",
+  "description": "Side-by-side LLM arena. Run the same prompt against multiple models, compare speed, cost, and quality in real-time.",
   "icon": "Zap",
   "version": "1.0.0",
   "tab": {
